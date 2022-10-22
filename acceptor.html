@@ -1,0 +1,173 @@
+<html>
+    <head>
+        <title>FindBloodDonors</title>
+        <style>
+            body{
+                background-size: cover; 
+                background: linear-gradient(140deg,#d15856,#c42522,#c42522);
+            }
+            h1{
+                font-size: 50;
+                color: whitesmoke;
+                margin-top: 40;
+                margin-left: 50;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            table{
+                margin-left: 50;
+                margin-top: 70;
+            }
+            td{
+                color: aliceblue;
+                font-size: 25px;
+                font-weight: bold;
+            }
+            img{
+                float: right;
+            }
+            .Name,.Phone
+            {
+                margin-left: 70px;
+                margin-bottom: 15px;
+                padding-top: 4px;
+                padding-bottom: 3px;
+            }
+            .BloodGroup{
+                padding-left: 60px;
+                padding-right: 70px;
+                margin-left: 70px;
+                margin-bottom: 20px;
+                padding-top: 3px;
+                padding-bottom: 3px;
+            }
+            /*.District{
+                padding-left: 60px;
+                padding-right: 10px;
+                margin-left: 70px;
+                margin-bottom: 20px;
+                padding-top: 3px;
+                padding-bottom: 3px;
+            }*/
+            .NoOfBottles{
+                padding-left: 60px;
+                padding-right: 70px;
+                margin-left: 70px;
+                padding-top: 3px;
+                padding-bottom: 3px;
+                margin-bottom: 20px;
+            }
+            .anchor{
+            	text-decoration:none;
+            }
+            .RequestDate{
+                margin-left: 70px;
+                padding-left: 35px;
+                margin-bottom: 20px;
+		margin-top: 3px;
+		padding-right: 26px;
+		padding-top:0px;
+		padding-bottom: 2px ;
+
+            }
+            .button-1{
+                margin-left: 150px;
+                padding: 2px 30px;
+            }
+            .button-2{
+                padding: 2px 50px;
+                margin-left: 20px;
+                text-decoration:none;
+            }
+            /*.state{
+                padding-left: 5px;
+                margin-left: 70px;
+                margin-bottom:20px;
+                padding-top: 3px;
+                padding-bottom: 3px;
+            }*/
+        </style>
+    </head>
+    
+    <body>
+    
+        <h1>BLOOD REQUEST</h1>
+        <img src="blood_drop_search.jpg">
+        <table>
+            <tr>
+                <td>Name </td>
+                <td><input type="text"placeholder="Enter Name" class="Name" required></td>
+            </tr>
+            <tr>
+                <td>Phone Number </td>
+                <td><input type="tel" maxlength="10" class="Phone" placeholder="Enter valid phone Number"></td>
+            </tr>
+            <tr>
+                <td>Blood Group</td>
+                <td>
+                        <select name="BloodGroup" size="0" class="BloodGroup">
+                            <option value="" disabled selected>select</option>
+                            <option value="A+" name="Group">A+</option>
+                            <option value="O+" name="Group">O+</option>
+                            <option value="B+" name="Group">B+</option>
+                            <option value="AB+" name="Group">AB+</option>
+                            <option value="A-" name="Group">A-</option>
+                            <option value="O-" name="Group">O-</option>
+                            <option value="B-" name="Group">B-</option>
+                            <option value="AB-" name="Group">AB-</option>
+                        </select>
+                </td>
+            </tr>
+            
+            <!--<tr>
+                <td>State</td>
+                <td><input type="text" class="state" name="price" id="price" value="ANDHRA PRADESH" readonly></td>
+            </tr>
+            <tr>
+                <td>Select District</td>
+                <td>
+                        <select name="SelectState" size="0" class="District">
+                            <option value="" disabled selected>select</option>
+                            <option value="Srikakulam" name="Group">Srikakulam</option>
+                            <option value="Vizayanagaram" name="Group">Vizayanagaram</option>
+                            <option value="Visakhapatnam" name="Group">Visakhapatnam</option>
+                            <option value="East Godavari" name="Group">East Godavari</option>
+                            <option value="West Godavari" name="Group">West Godavari</option>
+                            <option value="Krishna" name="Group">Krishna</option>
+                            <option value="Guntur" name="Group">Guntur</option>
+                            <option value="Prakasam" name="Group">Prakasam</option>
+                            <option value="Nellore" name="Group">Nellore</option>
+                            <option value="Kurnool" name="Group">Kurnool</option>
+                            <option value="Anantapur" name="Group">Anantapur</option>
+                            <option value="Kadapa" name="Group">Kadapa</option>
+                            <option value="Chitoor" name="Group">Chitoor</option>
+                        </select>
+                </td>
+            </tr>-->
+            <tr>
+                <td>Number Of Bottles</td>
+                <td>
+                        <select name="DropDownList" size="0" class="NoOfBottles" required>
+                            <option value="" disabled selected>select</option>
+                            <option value="1" name="Bottles">1</option>
+                            <option value="2" name="Bottles">2</option>
+                            <option value="3" name="Bottles">3</option>
+                        </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Request Date</td>
+                <td><input type="date" class="RequestDate"></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td><td>&nbsp;</td>
+            </tr>
+        </table>
+        <input type="reset" value="REQUEST" class="button-1" onclick="Successful()">
+        <a class="anchor" href="index.html"><button class="button-2" value="EXIT" >EXIT</button></a>
+        
+        
+    </body>
+    <script src="./js/acceptor.js">
+        
+    </script>
+</html>

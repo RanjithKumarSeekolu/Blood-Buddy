@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<link rel="stylesheet" type="text/css" href="reg.css">
+</head>
+<body>
+<div class="main">
+<div class="register">
+	<h2>DONOR REGISTRATION</h2>
+	<form id="register" method="post">
+
+		<label>Name : </label>
+		<br>
+		<input type="text" name="name" id="name" placeholder="Enter Your Name" >
+		<br><br>
+
+		<label>Your Age : </label>
+		<br>
+		<input type="number" name="age" id="age" placeholder="How Old Are You?" >
+		<br><br>
+
+		<label>Email : </label>
+		<br>
+		<input type="email" name="email" id="name" placeholder="Enter Your Valid Email" >
+		<br><br>
+
+		<label>Phone no : </label>
+		<br>
+		<input type="tel" name="phone" id="name" placeholder="Enter Your Valid Contact number" >
+		<br><br>
+
+		<label>Gender : </label>
+		<br>
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="gender" id="male">
+		&nbsp;
+		<span id="male">Male</span>
+		&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="gender" id="female">
+		&nbsp;
+		<span id="female">Female</span>
+		<br><br>
+
+		<label>Blood Group : </label>
+		<br>
+		<select name="blood" id="bloodgroup">
+		<option value="" disabled selected></option>
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+        </select>
+        <br><br>
+
+		<input type="submit" value="Register" name="submit" id="submit" onclick="myFunction()">
+	</form>
+</div>
+</div>
+
+<script src="./js/registration.js">
+ </script>
+
+</body>
+</html>
